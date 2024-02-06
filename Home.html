@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!------------------------Important Meta Data------------------------>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Corone Flori Templete, HTML, CSS, BOOTSTRAP, And JAVASCRIPT.">
+  <meta name="description" content="Corone Flori Template - A beautiful website template created using HTML, CSS, Bootstrap 5, and JavaScript.">
+  <!------------------------Google Font links------------------------>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Josefin+Sans:ital,wght@0,100;0,200;0,400;0,500;1,500;1,700&family=Poppins:ital,wght@0,100;0,400;0,600;0,700;0,800;1,200&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,300;1,500;1,900&family=Rubik+Mono+One&family=Rubik:ital,wght@0,400;0,700;1,400;1,600;1,700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap">
+  <!------------------------Font Awesom links------------------------>
+  <link rel="stylesheet" href="/CSS/all.min.css">
+  <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="/CSS/brands.min.css">
+  <link rel="stylesheet" href="/CSS/fontawesome.min.css">
+  <!------------------------favicon------------------------>
+  <link rel="shortCut icon" href="/MEDIA/favicon.svg">
+  <!------------------------Main Title------------------------>
+  <title>Corone Flori Templete Using HTML, CSS, BOOTSTRAP5, & JAVASCRIPT.</title>
+  <!------------------------Bootstrap CSS File Sheet------------------------>
+  <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+  <!------------------------Main CSS File Sheet------------------------>
+  <link rel="stylesheet" href="/CSS/Home.css">
+</head>
+<!------------------------Start of the body------------------------>
+<body>
+<!------------------------Start header section------------------------>
+<header>
+  <!-- Navbar --> 
+  <nav>
+    <div class="header-content">
+      <div class="logo">
+        <img src="/MEDIA/Logo/logo-white.png" alt="Opps something went wrong" draggable="false">
+      </div>
+      <i class="fas fa-bars fa-bars-small-screen" onclick="showSideBar()"></i>
+      <ul class="nav-area">
+          <li><a href="#heroSection">home</a></li>
+          <li><a href="#pagesSection">pages</a></li>
+          <li><a href="#arrangmentSection">portfolio</a></li>
+          <li><a href="#blogSection">blog</a></li>
+          <li><a href="#experinceSection">shop</a></li>
+          <li><a href="#teamSection">elements</a></li> 
+          <li  onclick="document.getElementById('id01').style.display='block'" style="width:auto;"  id="loginIcon"><a href="#">account</a></li>            
+          <!-- sign up form -->
+          <div id="id01" class="modal">
+            <span  class="close" title="Close Modal">&times;</span>
+            <form class="modal-content" action="#">
+              <div class="container">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input id="userEmail" type="text" placeholder="Enter Email" name="email">
+                <span id="emailErrorMessage"> </span>
+          
+                <label for="psw"><b>Password</b></label>
+                <input id="userPasswoord" type="password" placeholder="Enter Password" name="psw">
+                <span id="passwordErrorMessage"></span>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input id="userPasswoord2" type="password" placeholder="Repeat Password" name="psw-repeat">
+                <span id="passwordErrorMessage2"></span>
+                <a target="_blank" class="sign-prag" href="SigIn.html">Already have an account? Signin</a>   <br>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+          
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+          
+                <div class="clearfix">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <button id="signupbtn" type="submit" class="signupbtn">Sign Up</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- Start shopping card link -->
+          <li class="shopping-cart-icon">
+            <a href="#">
+              <i class="fa fa-shopping-cart">
+            </i>
+            </a>
+          </li>
+          <!-- Start menu  link -->
+          <li>
+            <a href="#">
+              <!-- <i class="fa-sharp fa-regular fa-sun"></i> -->
+              <!-- <i class="fas fa-bars fa-bar-larscreen"></i> -->
+              <i id="modeToggle" class="fa-solid fa-gear"></i>
+            </a>
+          </li>
+          <i onclick="hideSideBar()" class="fas fa-times"></i>
+      </ul>
+    </div>
+    <!-- Navbar -->
+  </nav>
+  <!------------------------End header section------------------------>
+</header>
+<!------------------------Start hero section------------------------>
+<section id="heroSection" class="hero-section">
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+             <span>welcome to rosstud</span>
+             <h1>perfect bouquet</h1>
+             <p>a simply gorgeous wordpress them package with everything you will need to create a delightfull website for your flower shopor florist buisness quickly and with ease</p>
+              <div class="buttons">
+                <div class="btn left-btn">read more</div>
+                <div class="btn right-btn">red more</div>
+              </div>
+            </div>
+          <div class="carousel-item">
+            <span>Exquisite Flower Arrangements</span>
+            <h1>Lorem dolor </h1>
+            <p>Indulge in the beauty of our floral masterpieces - an elegantly crafted WordPress theme package equipped with everything you need to build a charming website for your flower</p>
+            <div class="buttons">
+               <div class="btn left-btn">read more</div>
+               <div class="btn right-btn">red more</div>
+             </div>        
+            </div>
+          <div class="carousel-item">
+            <span>Captivating Floral Creations</span>
+            <h1>Lorem ipsum </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sunt tenetur neque perferendis, sint soluta quis laudantium repellendus. Sapiente, quisquam. Officia repudiandae natus quidem adipisci?</p>
+             <div class="buttons">
+               <div class="btn left-btn">read more</div>
+               <div class="btn right-btn">red more</div>
+             </div>        
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+   </div>
+  </div>
+</section>
+<!-- start Pages section -->
+<section id="pagesSection" class="pages-section">
+  <div class="container">
+    <div class="pages-contanes">
+      <div class="row">
+        <div class="col-md-3 pages-box">
+          <img src="/MEDIA/Pages/img05.png" alt="opps something went wong">
+          <h2>ready to be impressed</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sunt.</p>
+        </div>
+        <div class="col-md-3 pages-box">
+          <img src="/MEDIA/Pages/img06.png" alt="opps something went wong">
+          <h2>ready to be impressed</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sunt.</p>
+        </div>
+        <div class="col-md-3 pages-box">
+          <img src="/MEDIA/Pages/img07.png" alt="opps something went wong">
+          <h2>ready to be impressed</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sunt.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Pages section -->
+</section>
+<!-- Start a rrangement section -->
+<section id="arrangmentSection" class="arrangement-section">
+  <div class="container">
+    <div class="arrangment-header">
+      <span>wensday gift</span>
+      <h2>our wonderful arrangment</h2>
+    </div>
+    <div class="arrangement-section-contents">    
+      <div class="row">
+        <div class="col-sm-12 col-md-3 arrangment-box">
+          <img src="/MEDIA/Arrangment/img08.jpg" alt="opps something went wrong">
+          <!-- <span></span> -->
+          <h2>orange silk</h2>
+          <p>$330</p>
+        </div>
+        <div class="col-sm-12 col-md-3 arrangment-box">
+          <img src="/MEDIA/Arrangment/img09.jpg" alt="opps something went wrong">
+          <span>sold</span>
+          <h2>orange silk</h2>
+          <p>$330</p>
+        </div>
+        <div class="col-sm-12 col-md-3 arrangment-box">
+          <img src="/MEDIA/Arrangment/img10.jpg" alt="opps something went wrong">
+          <span>sold</span>
+          <h2>orange silk</h2>
+          <p>$330</p>
+        </div>
+        <div class="col-sm-12 col-md-3 arrangment-box">
+          <img src="/MEDIA/Arrangment/img11.jpg" alt="opps something went wrong">
+          <!-- <span></span> -->
+          <h2>orange silk</h2>
+          <p>$330</p>
+        </div>
+      </div>
+  </div>
+  </div>
+  
+   
+  <!-- End a rrangement section  -->
+</section>
+<!-- Start Blog Section -->
+<section id="blogSection" class="blog-section">
+    <div class="blog-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 blog-box">
+            <span>86</span>
+            <h2>blog posts</h2>
+          </div>
+          <div class="col-md-3 blog-box">
+            <span>25</span>
+            <h2>happy clints</h2>
+          </div>
+          <div class="col-md-3 blog-box">
+            <span>17</span>
+            <h2>web awards</h2>
+          </div>
+          <div class="col-md-3 blog-box">
+            <span>86</span>
+            <h2>blog posts</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- End Blog Section -->
+</section>
+<!-- Start spot section -->
+<section class="spot-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 spot-box spot-left">
+          <span>wonderful gift</span>
+          <h2>a perfect spot</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa architecto corporis minima voluptate cupiditate alias facere, numquam expedita aliquid sint atque nihil accusamus, nulla dignissimos beatae? Autem rem eum explicabo sequi esse nobis?</p>
+          <button class="spot-btn">read more</button>
+        <img src="/MEDIA/Spot/img16.jpg" alt="opps something went wrong" draggable="false">
+        </div>
+      <div class="col-md-6 spot-box spot-right">
+
+      </div>
+    </div>
+  </div>
+  <!-- End spot section -->
+</section>
+<!-- Start Experince section -->
+<section id="experinceSection" class="experince-section">
+    <div class="container">
+      <div class="row">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <span>welcome to rosstud</span>
+              <h1>perfect bouquet</h1> 
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus magni, beatae repellat fugiat nisi tempora amet error saepe voluptates minima dolorum corporis hic veniam at maxime sit, a nulla?</p>
+              <!-- <p>a simply gorgeous wordpress them package with everything you will need to create a delightfull website for your flower shopor florist buisness quickly and with ease</p> -->
+              <h4>helen malon</h4>             
+              <!-- <div class="carousel-caption d-none d-md-block"></div> -->
+            </div>
+            <div class="carousel-item">
+              <span>welcome to rosstud</span>
+              <h1>perfect bouquet</h1>  
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus magni, beatae repellat fugiat nisi tempora amet error saepe voluptates minima dolorum corporis hic veniam at maxime sit, a nulla?</p>
+              <!-- <p>Second slide label</p> -->
+              <h4>helen malon</h4>             
+              <!-- <div class="carousel-caption d-none d-md-block"></div> -->
+            </div>
+            <div class="carousel-item">
+              <span>welcome to rosstud</span>
+              <h1>perfect bouquet</h1>  
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus magni, beatae repellat fugiat nisi tempora amet error saepe voluptates minima dolorum corporis hic veniam at maxime sit, a nulla?</p>
+              <h4>helen malon</h4>             
+              <!-- <div class="carousel-caption d-none d-md-block"></div> -->
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  <!-- End Experince section -->
+</section>
+<!-- Start team section -->
+<section class="team-setion">
+  <div class="container">
+    <div class="team-header">
+      <span>wonderful gift</span>
+      <h2>our team of expert</h2>
+    </div>
+    <div class="team-contents">
+      <div class="row">
+        <div class="col-md-4 team-box">
+          <img src="/MEDIA/Team/img17.jpg" alt="opps something went wrong" draggable="false">
+          <p>mason ropbinson</p>
+          <span>florist</span>
+          <div class="team-links">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+        <div class="col-md-4 team-box">
+          <img src="/MEDIA/Team/img18.jpg" alt="opps something went wrong" draggable="false">
+          <p>mason ropbinson</p>
+          <span>Designer</span>
+          <div class="team-links">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+        <div class="col-md-4 team-box">
+          <img src="/MEDIA/Team/img19.jpg" alt="opps something went wrong" draggable="false">
+          <p>mason ropbinson</p>
+          <span>florist</span>
+          <div class="team-links">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+        <div class="col-md-4 team-box">
+          <img src="/MEDIA/Team/img20.jpg" alt="opps something went wrong" draggable="false">
+          <p>mason ropbinson</p>
+          <span>founder</span>
+          <div class="team-links">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img class="team-img" src="/MEDIA/Team/teambg.jpg" alt="">
+</section>
+<!-- End team section -->
+<!-- Start elements section -->
+<section id="teamSection" class="element-section">
+  <div class="container-fluid">
+    <div class="elements-contents">
+      <div class="elements-contents">
+        <div class="col-md-3 elements-box">
+          <img src="/MEDIA/Elements/img21.jpg" alt="opps something went wrong" draggable="false">
+        </div>
+        <div class="col-md-3 elements-box">
+          <img src="/MEDIA/Elements/img22.jpg" alt="opps something went wrong" draggable="false">
+        </div>
+        <div class="col-md-3 elements-box">
+          <img src="/MEDIA/Elements/img23.jpg" alt="opps something went wrong" draggable="false">
+        </div>
+        <div class="col-md-3 elements-box">
+          <img src="/MEDIA/Elements/img24.jpg" alt="opps something went wrong" draggable="false">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End elements section -->
+</section>
+<!-- Start subscribe section -->
+<section class="subscribe-section">
+ <div class="subscribe-contents">
+  <div class="container">
+    <div class="subscribe-header">
+      <h2>subscribe to our weekly newsletters</h2>
+    </div>
+    <div class="subscribe-form">
+     <form action="#">
+      <input type="email" name="userEmail" id="userEmail" placeholder="Your E-mail address">
+      <input type="submit" value="send message">
+     </form>
+    </div>
+  </div>
+ </div>
+  <!-- End subscribe section -->
+</section>
+   <!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted footer">
+    <!-- Section: Social media -->
+    <section class="footer-top-section p-4 ">    
+    </section>
+    <section class="inner-fooer">
+      <!-- Section: Links  -->
+      <div class="footer-inner-content text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 footer-first-col">
+            <!-- Content -->
+            <h6 class=" fw-bold mb-4"><img src="/MEDIA/Footer/footerBg.png" alt="opps something went wrong" draggable="false"></h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, eos. Odit eveniet tenetur ut?</p>
+            <div class="footer-social-left">
+                <i class="fa-brands fa-facebook-f "></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-second-col">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">WORKING hours</h6>
+            <p><a href="#!" class="text-reset">Monday: 10AM - 9PM</a></p>
+            <p><a href="#!" class="text-reset">Tusday: 10AM - 9PM</a></p>
+            <p><a href="#!" class="text-reset">Wensday: 10AM - 9PM</a></p>
+            <p> <a href="#!" class="text-reset">Thrusday: 10AM - 9PM</a></p>  
+            <p> <a href="#!" class="text-reset">Fraiday: 10AM - 9PM</a></p>  
+            <p> <a href="#!" class="text-reset">saturdat: 10AM - 5PM</a></p>  
+            <p> <a href="#!" class="text-reset">sunday: 10AM - 5PM</a></p>  
+        
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 footer-thired-col">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">where to find us</h6>  
+            <p><a href="#!" class="text-reset">Address:Juniper Vally, New York</a></p>
+            <p><a href="#!" class="text-reset">Address2:831 Elm St, New York</a></p>
+            <p> <a href="#!" class="text-reset">Phone1:+246/167/42696</a></p>
+            <p><a href="#!" class="text-reset">Email:rosebud@qodeinteractive.com</a></p>    
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 footer-fourth-col">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">follow our instagram</h6>
+             <div class="footer-galery">
+                <div class="rowo row1">
+                  <img src="/MEDIA/Footer/img26.jpg" alt="opps something went wrong" draggable="false">
+                  <img src="/MEDIA/Footer/img27.jpg" alt="opps something went wrong" draggable="false">
+                  <img src="/MEDIA/Footer/img28.jpg" alt="opps something went wrong" draggable="false">
+                </div>
+                <div class="rowo row1">
+                  <img src="/MEDIA/Footer/img29.jpg" alt="opps something went wrong" draggable="false">
+                  <img src="/MEDIA/Footer/img30.jpg" alt="opps something went wrong" draggable="false">
+                  <img src="/MEDIA/Footer/img31.jpg" alt="opps something went wrong" draggable="false" >
+                </div>
+             </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Copyright -->
+    <div class="text-center p-4 border-top last-footer" style="background-color: rgba(0, 0, 0, 0.05);" >
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">&copy; 2018 Qode Ineractive, All Rights Reserved</a>
+    </div>
+    <!-- Footer -->
+</footer>
+
+
+
+ 
+
+
+
+  <!------------------------Imprtant Javascript linkes------------------------>
+  <script src="/JS/popper.min.js"></script>
+  <script src="/JS/bootstrap.min.js"></script>
+  <script src="/JS/main.js"></script>
+  <!------------------------End of the body------------------------>
+</body>
+</html>

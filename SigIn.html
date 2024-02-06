@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/login.css">
+  <title>Login Page</title>
+</head>
+<body>
+ <div class="contents-login">
+      <h2 class="login-title">Login Form</h2>
+
+      <form action="#" method="post">
+        <div class="imgcontainer">
+          <img src="/MEDIA/T4.png" alt="Avatar" class="avatar">
+        </div>
+        <div class="container">
+          <label for="uname"><b>Useremail</b></label>
+          <input id="userEmail" type="email" placeholder="Enter Username" name="uname">
+          <span id="emailErrorMessage"> </span>  <br> 
+
+
+          <label for="psw"><b>Password</b></label>
+          <input id="userPassword" type="password" placeholder="Enter Password" name="psw">
+          <span id="passwordErrorMessage"></span>
+
+          <button id="loginSubmit" type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="Home.html">password?</a></span>
+        </div>
+        </form>
+ </div>
+ <script src="/JS/login.js"></script>
+</body>
+</html>
