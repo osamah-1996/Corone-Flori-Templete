@@ -129,10 +129,11 @@ var psw  = document.querySelector('.psw');
 psw.addEventListener('click', ()=>{
 var contentslogin = document.querySelector('contents-login');
 contentslogin.style.display = 'none';
-})
-//Scroll behaviour
-function scrollToTarget() {
-  const windowElement = document.querySelector('window');
-  windowElement.scrollIntoView({ behavior: 'smooth' });
+});
+
+//toggole function
+/*
+function togggoleFunction() {
+  document.body.classList.toggle("dark-them")
 }
- 
+*/
